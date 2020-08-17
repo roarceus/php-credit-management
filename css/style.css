@@ -1,0 +1,82 @@
+html, body {
+  	font-family: 'Roboto', 'Helvetica', sans-serif;
+  	height: 100%;
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+}
+body{
+	background-color: #00DBDE;
+	background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+/* Navbar */
+.nav-item{
+    color: #fff;
+}
+
+.nav-item:hover{
+    color: orange;
+}
+
+/* Home Tab & User Info Tab */
+#nav-home, #nav-user-info{
+	color: #fff;
+	text-align: center;
+}
+
+#nav-home h1, #nav-user-info h1{
+	font-size: 4rem;
+}
+
+#nav-home p, #nav-user-info p{
+	font-size: 2rem;
+}
+
+#nav-home b, #nav-user-info b{
+	color: yellow;
+}
+
+#nav-transaction-info{
+	padding-left: 10px;
+	color: #fff;
+}
+
+#nav-create-user, #nav-update-user, #nav-delete-user, #nav-select-user, #nav-transfer-credits{
+	margin-top: 3%;
+}
+
+/* All CRUD */
+.confirmation{
+	color: #33cc33;
+	font-size: 2rem;
+	padding-left: 10px;
+}
+
+.redirect_message{
+	font-size: 2rem;
+	padding-left: 10px;
+}
+
+/* All Form Labels */
+label{
+	color: #fff;
+	font-size: 2rem;
+}
+
+/* All Tables */
+table{
+	opacity: 0.9;
+
+}
+
+#nav-view-users, #nav-all-transaction-history, #nav-transaction-history{
+	width: 98%;
+	margin: 2% auto 0 auto;
+}
+
+/*  All Icons */
+i{
+	font-size: 5rem;
+	color: #fff;
+}
