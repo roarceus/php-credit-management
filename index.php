@@ -37,6 +37,7 @@
 	<div class="tab-content" id="nav-tabContent">
   		<div class="tab-pane fade show active" id="nav-home" role="tabpanel">
   			<br>
+  			<img src="img/main.png">
   			<h1>Credit Management System</h1>
   			<p>
   				Credit Transfer made easy!
