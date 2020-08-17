@@ -8,7 +8,7 @@ This is a CRUD application to simulate credit transfer between users.
 3. CSS3
 
 ## Working Demo
-http://tsf-cms.42web.io/index.php
+http://tsf-cms.42web.io
 
 ## Demo Link
 Coming soon!
