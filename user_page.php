@@ -94,10 +94,10 @@
 							if($result = $conn->query($sql)){
 								while($rows = $result->fetch_assoc()){
 									echo "<tr>";
-									echo "<td>".$rows["name"]."</td>";
-									echo "<td>".$rows["sentTo"]."</td>";
-									echo "<td>".$rows["sentAmount"]."</td>";
-									echo "<td>".$rows["stamp"]."</td>";
+									echo "<td data-label=\"Sent by\">".$rows["name"]."</td>";
+									echo "<td data-label=\"Received by\">".$rows["sentTo"]."</td>";
+									echo "<td data-label=\"Sent/Received Amount\">".$rows["sentAmount"]."</td>";
+									echo "<td data-label=\"Date & Time\">".$rows["stamp"]."</td>";
 									echo "</tr>";
 								}
 							}

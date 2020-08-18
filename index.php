@@ -93,10 +93,10 @@
 							$result = $conn->query($sql);
 							while($row = $result->fetch_assoc()){	
 								echo "<tr>";
-								echo "<td>".$row["id"]."</td>";
-								echo "<td>".$row["name"]."</td>";
-								echo "<td>".$row["email"]."</td>";
-								echo "<td>".$row["current_credits"]."</td>";
+								echo "<td data-label=\"ID\">".$row["id"]."</td>";
+								echo "<td data-label=\"Name\">".$row["name"]."</td>";
+								echo "<td data-label=\"Email\">".$row["email"]."</td>";
+								echo "<td data-label=\"Credits\">".$row["current_credits"]."</td>";
 								echo "</tr>";	
 							}
 						?>
@@ -229,10 +229,10 @@
 							if($result = $conn->query($sql)){
 								while($rows = $result->fetch_assoc()){
 									echo "<tr>";
-									echo "<td>".$rows["name"]."</td>";
-									echo "<td>".$rows["sentTo"]."</td>";
-									echo "<td>".$rows["sentAmount"]."</td>";
-									echo "<td>".$rows["stamp"]."</td>";
+									echo "<td data-label=\"Sent by\">".$rows["name"]."</td>";
+									echo "<td data-label=\"Received by\">".$rows["sentTo"]."</td>";
+									echo "<td data-label=\"Sent/Received Amount\">".$rows["sentAmount"]."</td>";
+									echo "<td data-label=\"Date & Time\">".$rows["stamp"]."</td>";
 									echo "</tr>";
 								}
 							}
