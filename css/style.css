@@ -8,6 +8,8 @@ html, body {
 body{
 	background-color: #00DBDE;
 	background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 /* Navbar */
@@ -79,4 +81,12 @@ table{
 i{
 	font-size: 5rem;
 	color: #fff;
+}
+
+/*  Image responsive */
+@media only screen and (max-width: 768px){
+	img{
+		width: 100%;
+		height: auto;
+	}
 }

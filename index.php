@@ -20,7 +20,33 @@
 
 <body>
 
-	<!-- Nav tabs -->
+	<!-- Experimental navbar 
+	<ul class="nav nav-tabs bg-dark responsive" id="nav-tab" role="tablist">
+  		<li class="nav-item">
+    		<a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Home</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-viewusers-tab" data-toggle="tab" href="#nav-view-users" role="tab">View Users</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-createuser-tab" data-toggle="tab" href="#nav-create-user" role="tab">Create Users</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-updateuser-tab" data-toggle="tab" href="#nav-update-user" role="tab">Update User</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-deleteuser-tab" data-toggle="tab" href="#nav-delete-user" role="tab">Delete User</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-selectuser-tab" data-toggle="tab" href="#nav-select-user" role="tab">Select User to transfer credits</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" id="nav-alltransactions-tab" data-toggle="tab" href="#nav-all-transaction-history" role="tab">View all Transaction History</a>
+  		</li>
+	</ul>
+	-->
+
+	
 	<nav>
   		<div class="nav nav-tabs bg-dark" id="nav-tab" role="tablist">
     		<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Home</a>
@@ -32,9 +58,10 @@
    			<a class="nav-item nav-link" id="nav-alltransactions-tab" data-toggle="tab" href="#nav-all-transaction-history" role="tab">View all Transaction History</a>
 		</div>
 	</nav>
+	
 
 	<!-- Home Tab Panel -->
-	<div class="tab-content" id="nav-tabContent">
+	<div class="tab-content responsive" id="nav-tabContent">
   		<div class="tab-pane fade show active" id="nav-home" role="tabpanel">
   			<br>
   			<img src="img/main.png">
@@ -216,5 +243,27 @@
 
 	</div>
 
+	<script>
+		$(document).ready(function () {
+    		var viewportWidth = $(window).width();
+    		if (viewportWidth < 768) {
+            	$(".nav-item").addClass("col-sm-12");
+    		}
+    		else {
+    			$(".nav-item").removeClass("col-sm-12");
+    		}
+		});
+		
+		$(window).resize(function () {
+    		var viewportWidth = $(window).width();
+    		if (viewportWidth < 768) {
+            	$(".nav-item").addClass("col-sm-12");
+    		}
+    		else {
+    			$(".nav-item").removeClass("col-sm-12");
+    		}
+		});
+	</script>
+	
 </body>
 </html>

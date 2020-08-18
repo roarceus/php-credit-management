@@ -27,6 +27,7 @@
    			<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-transaction-history" role="tab">Transaction History</a>
 		</div>
 	</nav>
+	
 	<div class="tab-content" id="nav-tabContent">
 
   		<div class="tab-pane fade show active" id="nav-user-info" role="tabpanel">
@@ -105,6 +106,28 @@
 			</table>
   		</div>
 	</div>
-			
+	
+	<script>
+		$(document).ready(function () {
+    		var viewportWidth = $(window).width();
+    		if (viewportWidth < 768) {
+            	$(".nav-item").addClass("col-sm-12");
+    		}
+    		else {
+    			$(".nav-item").removeClass("col-sm-12");
+    		}
+		});
+		
+		$(window).load(function () {
+    		var viewportWidth = $(window).width();
+    		if (viewportWidth < 768) {
+            	$(".nav-item").addClass("col-sm-12");
+    		}
+    		else {
+    			$(".nav-item").removeClass("col-sm-12");
+    		}
+		});
+	</script>
+
 </body>
 </html>
